@@ -1,4 +1,4 @@
-package com.sde.sheet.graph.implementation;
+package com.sde.sheet.graph.implementation.directed;
 
 import java.util.ArrayList;
 
@@ -14,19 +14,17 @@ public class AdjacencyList {
         }
         //1---2
         adjList.get(1).add(2);
-        adjList.get(2).add(1);
-
-        //2--------3
-        adjList.get(2).add(3);
-        adjList.get(3).add(2);
 
         //1----3
         adjList.get(1).add(3);
-        adjList.get(3).add(1);
+
+        //2--------3
+        adjList.get(2).add(3);
+
 
         for(int i = 1; i<= n;i++){
             System.out.print(i +"= ");
-            for (int j = 0; j < adjList.get(1).size() ; j++) {
+            for (int j = 0; j < adjList.get(i).size() ; j++) {
                 System.out.print(adjList.get(i).get(j) + " ");
             }
             System.out.println();
@@ -35,10 +33,11 @@ public class AdjacencyList {
 
 
 
-//                1----------2
-//                 \         |
-//                    \      |
-//                      \    |
-//                         \ 3
+//                1----------->2
+//                 \           |
+//                   \         |
+//                    \        |
+//                      \      \/
+//                         \ > 3
     }
 }
