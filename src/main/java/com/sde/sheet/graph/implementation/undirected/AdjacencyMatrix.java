@@ -1,4 +1,4 @@
-package com.sde.sheet.graph.implementation;
+package com.sde.sheet.graph.implementation.undirected;
 
 public class AdjacencyMatrix {
     public static void main(String[] args) {
