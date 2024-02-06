@@ -23,7 +23,7 @@ public class BreadthFirstSearch {
         addElements(graph.get(8), 7, 5);
         addElements(graph.get(9), 6);
 
-
+        System.out.println("adj list");
         for (int i = 0; i < graph.size(); i++) {
             System.out.println(i + " -> " + graph.get(i));
         }
