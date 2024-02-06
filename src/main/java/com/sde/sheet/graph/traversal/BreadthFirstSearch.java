@@ -29,7 +29,7 @@ public class BreadthFirstSearch {
         }
 
         ArrayList<Integer> ans =bfs(v,graph);
-        System.out.println(ans);
+        System.out.println("bfs="+ans);
     }
 
     private static void addElements(ArrayList<Integer> arrayList, Integer... values) {
